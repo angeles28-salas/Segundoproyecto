@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     //
-    public function Mensaje(){
+    public function mensaje(){
         return "Hola desde el controlador de PostController";
     }
     public function About($param=null,$nombre=null){
         $datos=['parametro'=>$param, 'nombre'=>$nombre];
         return view('about',$datos);
     }
-    public function Contacto(){
+    public function contacto(){
         return view('contacto',['mensaje'=>"Esto es un mensaje"]);
     }
     public function llamado_componente(){

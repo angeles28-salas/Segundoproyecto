@@ -1,9 +1,10 @@
 @extends('layouts.app')
+<!-- En la linea anterior hago la referencia a la plantilla -->
+<!-- Si el contenido abarca más de una linea se puede utilizar la seguiente estructura, caso
+contrario se puede utilizar la misma directiva de section pasando como segundo parametro el
+nombre del titulo  -->
 
-<!-- Si el contenido abarca más de una linea se puede utilizar la seguiente estructura, -->
 @section('litle, 'Laravel 12 | Contacto')
-
-
 @push('css)
     <style>
         body{
@@ -11,7 +12,6 @@
         }
     </style>
 @endpush
-
 @push('css')
     <style>
         h1{
@@ -20,10 +20,12 @@
     </style>
 @endpush
 
-
-
-
-
-
+@section('content')
+      <div class="max-w-4xl mx-auto px-4">
+        <h1>Entrando a la seccion de Contacto</h1>
+        <p>Aqui va el contenido del contacto</p>
+        <p><?=$mensaje?></p>
+        <p>{{$mensaje}}</p>
+      </div>
 
 @endsection
