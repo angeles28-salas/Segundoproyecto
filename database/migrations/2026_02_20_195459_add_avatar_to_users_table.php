@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Database\Illuminate\Database\Migrations\Migrations\Migration;
+use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Illuminate\Database\Blueprint;
 use Illuminate\Database\Illuminate\Database\Schema;
 
